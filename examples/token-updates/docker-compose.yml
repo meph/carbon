@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  token-updates:
+    image: token-updates
+    container_name: token-updates
+    restart: unless-stopped
+    network_mode: host
+    env_file:
+      - .env
+    environment:
+      - RUST_LOG=info
