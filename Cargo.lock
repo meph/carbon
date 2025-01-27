@@ -5492,6 +5492,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "spl-token-2022-decoder"
+version = "0.1.4"
+dependencies = [
+ "carbon-core",
+ "carbon-macros",
+ "carbon-proc-macros",
+ "serde",
+ "serde-big-array",
+ "solana-sdk",
+]
+
+[[package]]
 name = "spl-token-group-interface"
 version = "0.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"

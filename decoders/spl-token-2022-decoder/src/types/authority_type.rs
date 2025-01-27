@@ -1,0 +1,25 @@
+
+
+use carbon_core::{CarbonDeserialize, borsh};
+
+
+#[derive(CarbonDeserialize, Debug, serde::Serialize, serde::Deserialize, PartialEq, Eq, Clone, Hash)]
+pub enum AuthorityType {
+    MintTokens,
+    FreezeAccount,
+    AccountOwner,
+    CloseAccount,
+    TransferFeeConfig,
+    WithheldWithdraw,
+    CloseMint,
+    InterestRate,
+    PermanentDelegate,
+    ConfidentialTransferMint,
+    TransferHookProgramId,
+    ConfidentialTransferFeeConfig,
+    MetadataPointer,
+    GroupPointer,
+    GroupMemberPointer,
+}
+
+
